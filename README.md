@@ -1,5 +1,9 @@
 # React tech test
 
+View deployed version:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e9241d63-ebf4-4936-9f8f-8d9fbc18f850/deploy-status)](https://app.netlify.com/sites/compassionate-pike-ec89c7/deploys)
+
 ## Tasks
 
 Using a Javascript Framework of your choice (Preferably React) or regular native Javascript, please carry out the following tasks:
