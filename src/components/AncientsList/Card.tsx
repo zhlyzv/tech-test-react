@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { DataItem } from './index'
+import { Item } from './index'
 
 const Wrapper = styled.li`
     margin-bottom: 15px;
@@ -24,16 +24,16 @@ const Attribute = styled.div`
     }
 `
 
-const ListCard: React.FC<DataItem> = ({ name, superpower, end_of_an_era }) => {
+const Card: React.FC<Item> = ({ name, superpower, end_of_an_era }) => {
     const eraEnd = new Date(end_of_an_era).toUTCString()
 
     return (
         <Wrapper>
-            <h2>{name}</h2>
+            <h2>{name.toUpperCase()}</h2>
 
             <Attribute>
                 <span className="name">Superpower:</span>{' '}
-                <span className="value">{superpower}</span>
+                <span className="value">{superpower.toUpperCase()}</span>
             </Attribute>
 
             <Attribute>
@@ -43,4 +43,4 @@ const ListCard: React.FC<DataItem> = ({ name, superpower, end_of_an_era }) => {
     )
 }
 
-export default ListCard
+export default Card

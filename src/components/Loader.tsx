@@ -4,7 +4,7 @@ import styled from 'styled-components'
  * Pure CSS loader
  * Taken from https://projects.lukehaas.me/css-loaders/
  */
-const Loader = styled.div`
+const CSSLoader = styled.div`
     color: var(--color-dark);
     font-size: 20px;
     margin: 100px auto;
@@ -13,51 +13,50 @@ const Loader = styled.div`
     border-radius: 50%;
     position: relative;
     text-indent: -9999em;
-    animation: load4 1.3s infinite linear;
+    animation: load 1.3s infinite linear;
     transform: translateZ(0);
 
-    @keyframes load4 {
+    @keyframes load {
         0%,
         100% {
-            box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em,
-                2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
-                -2em -2em 0 0;
+            box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
         }
         12.5% {
-            box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
-                0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+                -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
         }
         25% {
-            box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em,
-                2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
-                -2em -2em 0 -1em;
+            box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em,
+                -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
         }
         37.5% {
-            box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0,
-                2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em,
-                -2em -2em 0 -1em;
+            box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+                -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
         }
         50% {
-            box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em,
-                2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em,
-                -2em -2em 0 -1em;
+            box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+                -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
         }
         62.5% {
-            box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em,
-                2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
-                -2em -2em 0 -1em;
+            box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+                -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
         }
         75% {
-            box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em,
-                2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em,
-                -2em -2em 0 0;
+            box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+                0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
         }
         87.5% {
-            box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em,
-                2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0,
-                -2em -2em 0 0.2em;
+            box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
         }
     }
 `
+
+const Loader: React.FC = () => (
+    <CSSLoader>
+        <p className="visually-hidden">Loading..</p>
+    </CSSLoader>
+)
 
 export default Loader

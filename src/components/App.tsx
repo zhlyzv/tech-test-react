@@ -5,6 +5,7 @@ import Layout from './layout'
 function App() {
     return (
         <Layout>
+            {/* <Search /> */}
             <AncientList />
         </Layout>
     )

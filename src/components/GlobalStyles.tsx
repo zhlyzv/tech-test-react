@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+*,
+::before,
+::after { box-sizing: border-box; }
+
 :root {
     /* Colors */
     --color-dark: #111;
@@ -31,6 +35,18 @@ h2 { font-size:2.12rem; }
 h3 { font-size:1.666rem; }
 
 h4 { font-size:1.25rem; }
+
+/* Utility */
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
 `
 
 export default GlobalStyles

@@ -22,7 +22,7 @@ const Layout: React.FC<React.ReactNode> = ({ children }) => (
     <Wrapper>
         <GlobalStyles />
         <Header>
-            <h1>Hello</h1>
+            <h1>Hello Tech Test</h1>
         </Header>
         <main>{children}</main>
     </Wrapper>
