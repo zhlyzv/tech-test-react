@@ -1,6 +1,6 @@
 import React from 'react'
 import AncientList from './AncientsList'
-import Layout from './layout'
+import Layout from './ui/layout'
 import { SWRConfig } from 'swr'
 import fetcher from '../lib/fetcher'
 

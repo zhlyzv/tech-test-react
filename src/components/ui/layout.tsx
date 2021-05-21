@@ -12,18 +12,12 @@ const Wrapper = styled.div`
     align-items: center;
 `
 
-const Header = styled.header`
-    @media only screen and (max-width: 767px) {
-        padding-top: 20px;
-    }
-`
-
 const Layout: React.FC<React.ReactNode> = ({ children }) => (
     <Wrapper>
         <GlobalStyles />
-        <Header>
+        <header>
             <h1>Hello Tech Test</h1>
-        </Header>
+        </header>
         <main>{children}</main>
     </Wrapper>
 )

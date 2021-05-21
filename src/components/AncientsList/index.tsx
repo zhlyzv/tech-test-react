@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import useSWR from 'swr'
 import { API_ENDPOINT, API_ENDPOINT_ERROR, API_ENDPOINT_SEARCH } from '../../constants'
-import Loader from '../Loader'
+import Loader from '../ui/Loader'
 import Input from '../ui/Input'
 import SearchForm from '../ui/SearchForm'
 import SubmitBtn from '../ui/SubmitBtn'
